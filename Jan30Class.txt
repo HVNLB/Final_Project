@@ -1,0 +1,1 @@
+This class was about data representation. An explanation of the binary form of data was given. We also went over data units, the hexadecimal system, unicode and sounds represented as numbers
