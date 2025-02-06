@@ -1,0 +1,1 @@
+In this class we took a look at some XML and JSON ontologies and algorithms
