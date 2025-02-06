@@ -1,0 +1,109 @@
+{
+  "ontology": {
+    "name": "Linux Functions Ontology",
+    "description": "Ontology defining Linux functions and commands",
+    "categories": [
+      {
+        "name": "Basic Commands",
+        "concepts": [
+          {
+            "name": "ls",
+            "description": "Lists directory contents.",
+            "parameters": ["-l", "-a", "-h"],
+            "output": "Displays file names and attributes.",
+            "examples": ["ls -l", "ls -a"]
+          },
+          {
+            "name": "cd",
+            "description": "Changes the current directory.",
+            "parameters": ["directory_path"],
+            "output": "Moves the user to the specified directory.",
+            "examples": ["cd /home/user", "cd .."]
+          },
+          {
+            "name": "grep",
+            "description": "Searches for patterns in files.",
+            "parameters": ["pattern", "file"],
+            "output": "Displays matching lines.",
+            "examples": ["grep 'error' logfile.txt", "ps aux | grep bash"]
+          }
+        ]
+      },
+      {
+        "name": "File System",
+        "concepts": [
+          {
+            "name": "ext4",
+            "description": "Linux file system supporting journaling.",
+            "features": ["journaling", "large file support", "extended attributes"]
+          },
+          {
+            "name": "inodes",
+            "description": "Data structures storing metadata about files.",
+            "attributes": ["file size", "permissions", "timestamps", "owner", "group"]
+          },
+          {
+            "name": "mount",
+            "description": "Attaches a filesystem to the system.",
+            "parameters": ["device", "mount_point"],
+            "output": "Makes the device accessible from a directory.",
+            "examples": ["mount /dev/sdb1 /mnt"]
+          }
+        ]
+      },
+      {
+        "name": "Process Management",
+        "concepts": [
+          {
+            "name": "ps",
+            "description": "Displays information about active processes.",
+            "parameters": ["aux", "-ef"],
+            "output": "Lists process IDs, users, CPU/memory usage.",
+            "examples": ["ps aux", "ps -ef"]
+          },
+          {
+            "name": "kill",
+            "description": "Sends signals to processes.",
+            "parameters": ["signal", "process ID"],
+            "output": "Terminates or manages process execution.",
+            "examples": ["kill -9 1234", "kill -HUP 5678"]
+          },
+          {
+            "name": "nice",
+            "description": "Starts a process with a specified priority.",
+            "parameters": ["priority", "command"],
+            "output": "Runs the command with modified scheduling priority.",
+            "examples": ["nice -n 10 gcc program.c"]
+          }
+        ]
+      },
+      {
+        "name": "Networking",
+        "concepts": [
+          {
+            "name": "ping",
+            "description": "Checks connectivity to a host.",
+            "parameters": ["hostname"],
+            "output": "Reports response times.",
+            "examples": ["ping google.com", "ping -c 4 8.8.8.8"]
+          },
+          {
+            "name": "netstat",
+            "description": "Displays network connections and statistics.",
+            "parameters": ["-tulnp", "-i"],
+            "output": "Lists active connections, listening ports, and interfaces.",
+            "examples": ["netstat -tulnp", "netstat -i"]
+          },
+          {
+            "name": "iptables",
+            "description": "Configures firewall rules.",
+            "parameters": ["rule", "chain"],
+            "output": "Adds, removes, or modifies firewall rules.",
+            "examples": ["iptables -A INPUT -p tcp --dport 22 -j ACCEPT"]
+          }
+        ]
+      }
+    ]
+  }
+}
+
