@@ -1,0 +1,1 @@
+This lecture was about more bitwise operators like xor,the difference between assignment by value and by pointer and we had a quiz
