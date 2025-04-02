@@ -1,0 +1,1 @@
+In this class we looked at a traffic light example with emphasis on swithces.
