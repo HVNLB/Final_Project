@@ -1,0 +1,34 @@
+# Compiled binary
+formula-bot
+
+# Object files
+*.o
+
+# Build directories
+/build/
+/bin/
+/obj/
+
+# Dependency libraries
+*.a
+*.so
+*.dll
+*.dylib
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+
+.vscode/
+.idea/
+*.swp
+*~
+
+
+token.txt
+.env
+
+
+src/cJSON.c
+src/cJSON.h
